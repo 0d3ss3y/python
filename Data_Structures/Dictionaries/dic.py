@@ -129,6 +129,19 @@ def update():
     
     for key,value in person.items():
         print(f"{key} : {value}")
- 
+
+def aggression(): 
+    total = 0
+    dict_aggregate = {
+    'Alice': [1, 2, 3],
+    'Bob': [4, 5, 6]
+    }
+    
+    for key,value in dict_aggregate.items():
+        for i in value:
+            total += i
+        print(f"{key} : Total = {total}")
+
+
 if __name__ == "__main__":
     main()
