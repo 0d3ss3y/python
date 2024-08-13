@@ -34,6 +34,30 @@ def add(person):
     person["location"] = location
     
     return person
+    
+def lookUp():
+    person = {
+        "Natalie" : {
+            "age": 27,
+            "location" : "Pretoria",
+            "Job" : "Doctor"
+        },
+        
+        "Samuel" : {
+            "age" : 22,
+            "location" : "Midrand",
+            "Job" : "Data Scientist"
+        },
+        
+        "Rossi" : {
+            "age" : 22,
+            "location":"Rustenburg",
+            "Job" : "Farmer"
+        }
+        
+    }
+    
+    search(person)
         
      
  
