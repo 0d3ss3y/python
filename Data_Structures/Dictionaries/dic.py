@@ -98,7 +98,37 @@ def search(people):
     
     for key,value in person.items():
         print(f"{key} : {value}")
-     
+
+def update():
+    person = {
+        "Natalie" : {
+            "age": 27,
+            "location" : "Pretoria",
+            "Job" : "Doctor"
+        },
+        
+        "Samuel" : {
+            "age" : 22,
+            "location" : "Midrand",
+            "Job" : "Data Scientist"
+        },
+        
+        "Rossi" : {
+            "age" : 22,
+            "location":"Rustenburg",
+            "Job" : "Farmer"
+        }
+        
+    }
+    
+    person.update({"Hailey" : {
+            "age" : 27,
+            "location":"Rustenburg",
+            "Job" : "Cyber Security Expert"
+        }})
+    
+    for key,value in person.items():
+        print(f"{key} : {value}")
  
 if __name__ == "__main__":
     main()
