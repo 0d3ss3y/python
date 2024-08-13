@@ -23,7 +23,18 @@ def operational():
     
     for key, value in person.items():
         print(f"{key} : {value}")
+           
+def add(person):
+    name = "Natalie"
+    age = 27
+    location = "Pretoria"
     
+    person["name"] = name
+    person["age"] = age
+    person["location"] = location
+    
+    return person
+        
      
  
 if __name__ == "__main__":
