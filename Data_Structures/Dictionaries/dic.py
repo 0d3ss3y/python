@@ -58,6 +58,15 @@ def lookUp():
     }
     
     search(person)
+    
+def search(people):
+    looking = "Samuel"
+    
+    for key,value in people.items():
+        if key == looking:
+            print(f"Looking up : {key}")
+            for item,info in value.items():
+                print(f"{item} : {info}")
         
      
  
