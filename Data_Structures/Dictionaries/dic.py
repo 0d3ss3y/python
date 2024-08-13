@@ -67,7 +67,37 @@ def search(people):
             print(f"Looking up : {key}")
             for item,info in value.items():
                 print(f"{item} : {info}")
+
+    person = {
+        "Natalie" : {
+            "age": 27,
+            "location" : "Pretoria",
+            "Job" : "Doctor"
+        },
         
+        "Samuel" : {
+            "age" : 22,
+            "location" : "Midrand",
+            "Job" : "Data Scientist"
+        },
+        
+        "Rossi" : {
+            "age" : 22,
+            "location":"Rustenburg",
+            "Job" : "Farmer"
+        }
+        
+    }
+    
+    for key,value in person.items():
+        print(f"{key} : {value}")
+    
+    print("\nremoval of Rossi")
+    person.pop("Rossi")  
+    print() 
+    
+    for key,value in person.items():
+        print(f"{key} : {value}")
      
  
 if __name__ == "__main__":
