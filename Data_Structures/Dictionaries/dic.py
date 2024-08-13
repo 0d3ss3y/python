@@ -67,7 +67,8 @@ def search(people):
             print(f"Looking up : {key}")
             for item,info in value.items():
                 print(f"{item} : {info}")
-
+        
+def removal():
     person = {
         "Natalie" : {
             "age": 27,
@@ -98,7 +99,7 @@ def search(people):
     
     for key,value in person.items():
         print(f"{key} : {value}")
-
+      
 def update():
     person = {
         "Natalie" : {
@@ -129,7 +130,7 @@ def update():
     
     for key,value in person.items():
         print(f"{key} : {value}")
-
+ 
 def aggression(): 
     total = 0
     dict_aggregate = {
@@ -141,7 +142,22 @@ def aggression():
         for i in value:
             total += i
         print(f"{key} : Total = {total}")
+   
+def count_letters():
+    count_dic = {}
+    letters = string.ascii_lowercase  
+    sentence = "The quick brown fox jumps over a lazy dog"
+    
+    for letter in letters:
+        count_dic.update({letter:0})
 
-
+    for letter in sentence.lower():  
+        if letter in count_dic.keys():
+            count_dic[letter] += 1
+    
+    print(count_dic)
+    
+     
+ 
 if __name__ == "__main__":
     main()
